@@ -1,5 +1,5 @@
 # food-reservation
-### team-3
+### team-2
 * Mahshid
 * Zahra
 * Tannaz
