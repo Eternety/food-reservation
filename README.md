@@ -1,5 +1,12 @@
 # food-reservation
 
+### Team 1
++ sina hossini
++ alireza teymori
++ ahmad fakhari
++ amirali bigdeli
++ mohammad hashempor
++ hamidreza yavarzadeh
 
 ### team 3
 * alireza
@@ -7,12 +14,3 @@
 * mohamad
 * ayda
 * mahdie
-
-### Team one
-sina hossini
-alireza teymori
-ahmad fakhari
-amirali bigdeli
-mohammad hashempor
-hamidreza yavarzadeh
-
