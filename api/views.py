@@ -1,3 +1,16 @@
 from django.shortcuts import render
 
-# Create your views here.
+from rest_framework import viewsets
+
+from .models import Food, FoodType
+from .serializers import FoodSerializer, FoodTypeSerializer
+
+class FoodTypeListViewSet(viewsets.ReadOnlyModelViewSet):
+	"""API endpoint to list all food types"""
+	queryset = FoodType.objects.all()
+	serializer_class = FoodTypeSerializer
+
+class FoodListViewSet(viewsets.ReadOnlyModelViewSet):
+	"""API endpoint to list all food items"""
+	queryset = Food.objects.all()
+	serializer_class = FoodSerializer
