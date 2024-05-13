@@ -19,3 +19,5 @@ static/
 *.sqlite3
 
 .env
+
+**/migrations/**
