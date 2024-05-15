@@ -38,11 +38,10 @@ class OrderAdmin(admin.ModelAdmin):
 @admin.register(Discount)
 class Discount(admin.ModelAdmin):
 	list_display = ('min_total_price', 'discount_percentage',)
-	date_hierarchy = 'created_at'
 	
 @admin.register(Reservation)
 class Reservation(admin.ModelAdmin):
-	list_display = ('id', 'customer', 'reservation_at', 'number_of_guests','foods','description','created_at','updated_at',)
+	list_display = ('id', 'customer', 'reservation_at', 'number_of_guests','description','created_at','updated_at',)
 	search_fields = ('id',)
 	list_filter = ('created_at',)
 	date_hierarchy = 'created_at'
