@@ -26,7 +26,7 @@
 * mahdie
 
 ### Team 4 
-*sodeyri
-*chegini
-*kiani
-*moghadam_zadeh
+* sodeyri
+* chegini
+* kiani
+* moghadam_zadeh
