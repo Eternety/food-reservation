@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Food, FoodType, UserType, CustomUser, Order, Discount, Reservation
+from .models import Food, FoodType, UserType, CustomUser, Order, Discount, Reservation, UserProfile
 
 
 @admin.register(FoodType)
@@ -21,6 +21,11 @@ class FoodAdmin(admin.ModelAdmin):
 class UserTypeAdmin(admin.ModelAdmin):
 	list_display = ('id', 'name',)
 	search_fields = ('name',)
+
+@admin.register(UserProfile)
+class UserProfileAdmin(admin.ModelAdmin):
+	list_display = ('id', 'user', 'address')
+	search_fields = ('address',)
 
 @admin.register(CustomUser)
 class CustomerUserAdmin(admin.ModelAdmin):
