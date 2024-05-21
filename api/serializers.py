@@ -1,6 +1,8 @@
 from rest_framework import serializers
 
-from .models import Food, FoodType, UserType, CustomUser
+
+from .models import Food, FoodType, UserType, CustomUser, Order
+
 
 
 class FoodTypeSerializer(serializers.ModelSerializer):
@@ -28,3 +30,9 @@ class CustomUserSerializer(serializers.ModelSerializer):
     model = CustomUser
     fields = ['id', ' user_type ']
 
+
+class OrderSerializer(serializers.ModelSerializer):
+  
+  class Meta: 
+    model =  Order 
+    fields = ['id', 'name', 'created_at', 'address', 'total_price' , 'discount_applied']
